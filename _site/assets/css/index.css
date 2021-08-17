@@ -1,0 +1,242 @@
+@import url('https://fonts.googleapis.com/css2?family=Luckiest+Guy&display=swap');
+
+:root {
+    --dark-purple: #22162bff;
+    --russian-violet: #451f55ff;
+    --russian-violet-hover: rgb(118, 55, 145);
+    --royal-purple: #724e91ff;
+    --royal-purple-hover: rgb(79, 51, 104);
+    --paradise-pink: #e54f6dff;
+    --saffron: #f8c630ff;
+    --saffron-hover: rgb(255, 209, 72);
+    --font: 'Luckiest Guy', cursive;
+}
+
+body {
+    background-color: var(--dark-purple);
+    margin: 0;
+    height: 100vh;
+    display: flex;
+    overflow: hidden;
+    font-family: var(--font);
+    position: relative;
+    text-align: center;
+    color: var(--paradise-pink);
+}
+
+.visible {
+    visibility: visible;
+}
+
+.hidden {
+    display: none;
+}
+
+.button {
+    font-size: 1.8em;
+    padding: .5em 1em;
+    border-radius: 15px;
+    border: none;
+    font-family: var(--font);
+    background-color: var(--royal-purple);
+    color: var(--saffron);
+    transition: 0.3s;
+    margin: .5em;
+    outline: none;
+}
+
+.button:hover {
+    background-color: var(--royal-purple-hover);
+    color: var(--saffron-hover);
+}
+
+.content {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.sidepanel {
+    width: 100%;
+    text-align: center;
+    padding: 2em;
+}
+
+.sidepanel, .game-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.sidepanel-left {
+    justify-content: start;
+    padding-top: 10em;
+}
+
+.sidepanel-right {
+
+}
+
+a {
+    text-decoration: none;
+}
+
+#score-title {
+    margin-bottom: 3em;
+    font-size: 2em;
+}
+
+#title {
+    margin-bottom: 2em;
+}
+
+#game {
+    border: 10px solid var(--paradise-pink);
+    border-radius: 5%;
+    width: 700px;
+    height: 700px;
+    background-color: black;
+}
+
+.content {
+    margin-top: 100px;
+}
+
+.front-screen, .rules-screen {
+    font-size: 2.5em;
+}
+
+.rules {
+    padding-bottom: 1em;
+    text-align: left;
+    list-style: georgian;
+}
+
+.rules li {
+    padding: .5em 1em;
+}
+
+.rule-container {
+    display: flex;
+    justify-content: center;
+}
+
+.rule-container img {
+    padding: 2em;
+}
+
+.navbar {
+    position: fixed;
+}
+
+.navbrand {
+    padding: 1em;
+    font-size: 1.4em;
+    display: block;
+    animation: rotating 5s ease-in-out infinite;
+}
+
+@keyframes rotating {
+    0% {
+        -ms-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+    50% {
+        -ms-transform: rotate(-45deg);
+        -moz-transform: rotate(-45deg);
+        -webkit-transform: rotate(-45deg);
+        -o-transform: rotate(-45deg);
+        transform: rotate(-45deg);
+    }
+    100% {
+        -ms-transform: rotate(45deg);
+        -moz-transform: rotate(45deg);
+        -webkit-transform: rotate(45deg);
+        -o-transform: rotate(45deg);
+        transform: rotate(45deg);
+    }
+}
+
+.popup {
+    position: absolute;
+    z-index: 20;
+    background-color: var(--russian-violet);
+    border-radius: 15px;
+    padding: 2em;
+    left: 50%;
+    top: 40%;
+    transform: translate(-50%, -50%);
+}
+
+.score-label {
+    font-size: 2em;
+}
+
+.popup-close {
+    border: 1px solid transparent;
+    border-radius: 10px;
+    padding: .5em;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    background-color: transparent;
+    color:rgb(255, 209, 72);
+    font-weight: 700;
+    font-size: 1em;
+    transition: 0.3s;
+}
+
+.popup-close:hover {
+    border: 1px solid white;
+}
+
+#popup-message {
+    font-size: 4em;
+    padding: 0 2em;
+}
+
+#buttons {
+    display: block;
+    width: 100%;
+    height: 30%;
+    position: relative;
+}
+
+.btn {
+    display: block;
+    position: absolute;
+}
+
+.btn-up {
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn-right {
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.btn-down {
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.btn-left {
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+

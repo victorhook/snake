@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/snake/assets/css/index.css">
+    <title>Snake</title>
+</head>
+<body>
+
+    <nav class="navbar">
+        <a class="navbrand" href="/snake/"><img src="/snake/assets/images/logo.svg"></a>
+    </nav>
+
+    <div class="content">
+        <div class="popup hidden" id="popup">
+    <h1>Get ready to play!</h1>
+    <p id="popup-message"></p>
+</div>
+
+<div class="popup hidden" id="popup-restart">
+    <button class="popup-close">X</button>
+    <h1>Game over!</h1>
+    <span class="score-label">Score: <span id="final-score"></span></span>
+    <br>
+    <div>
+        <a class="button" href="/snake/">Home</a>
+        <button class="button" id="restart">Restart</button>
+    </div>
+</div>
+
+<div class="game-content">
+    <div class="container">
+
+        <div class="sidepanel sidepanel-left">
+        </div>
+
+        <div class="game-container">
+            <canvas id="game"></canvas>
+            <h2 id="score-title">Score: <span id="score"></span></h2>
+        </div>
+
+        <div class="sidepanel sidepanel-right">
+        </div>
+
+    </div>
+</div>
+
+
+<script src="/snake/assets/js/index.js"></script>
+<script src="/snake/assets/js/snake.js"></script>
+    </div>
+
+</body>
+</html>

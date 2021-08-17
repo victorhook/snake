@@ -1,0 +1,40 @@
+---
+layout: base
+---
+
+<div class="popup hidden" id="popup">
+    <h1>Get ready to play!</h1>
+    <p id="popup-message"></p>
+</div>
+
+<div class="popup hidden" id="popup-restart">
+    <button class="popup-close">X</button>
+    <h1>Game over!</h1>
+    <span class="score-label">Score: <span id="final-score"></span></span>
+    <br>
+    <div>
+        <a class="button" href="{{ site.baseurl }}">Home</a>
+        <button class="button" id="restart">Restart</button>
+    </div>
+</div>
+
+<div class="game-content">
+    <div class="container">
+
+        <div class="sidepanel sidepanel-left">
+        </div>
+
+        <div class="game-container">
+            <canvas id="game"></canvas>
+            <h2 id="score-title">Score: <span id="score"></span></h2>
+        </div>
+
+        <div class="sidepanel sidepanel-right">
+        </div>
+
+    </div>
+</div>
+
+
+<script src="{{ site.asseturl }}js/index.js"></script>
+<script src="{{ site.asseturl }}js/snake.js"></script>
